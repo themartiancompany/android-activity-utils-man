@@ -28,7 +28,7 @@
 
 
 ==============================================
-Touch Control (touchctl) manuals authors
+Android Activity Utilities manuals authors
 ==============================================
 
 * Pellegrino Prevete

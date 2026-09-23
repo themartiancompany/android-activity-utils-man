@@ -28,57 +28,41 @@
 
 
 ========================
-dynssh
+activity-launch
 ========================
 
 --------------------------------------------------------------
-Touchscreen control
+Activity Launch
 --------------------------------------------------------------
-:Version: touchctl |version|
+:Version: activity-launch |version|
 :Manual section: 1
 
 
 Synopsis
 ========
 
-touchctl*[options]* -- *command* *[command-args]*
+activity-launch *[options]* *app* *activity*
 
 
 Description
 ===========
 
-Manages device with high precision
-sensibility such as touch controls.
-
-
-Commands
-===========
-
-* *enable*
-
-  Enables a touch devices.
-
-* *disable*
-
-  Disables a touch devices.
-
-* *status*
-
-  Return status for a touch device.
+Launches Android activities.
 
 
 Options
 =======
 
--t                   Input device type.
-                     It can be 'touchscreen'
-                     or 'touchpad'.
--d                   Input device path.
-                     It gets auto-detected when
-                     only one touch input device
-                     is found. More than one can
-                     be specified.
--m                   Setting method (it can be 'root').
+-m <mode>            How to switch activity.
+-L <length>          For how much time keep focus on
+                     target activity
+-p <poll>            Time interval between focus checks.
+-d                   Dims the display while the target
+                     application is in focus.
+-t                   Disables the touchscreen (depending
+                     on device and system you could
+                     be enable to re-enable them without
+                     a reboot).
 
 Application options
 =====================
@@ -91,7 +75,7 @@ Application options
 Bugs
 ====
 
-https://github.com/themartiancompany/touchctl/-/issues
+https://github.com/themartiancompany/android-activity-utils/-/issues
 
 
 Copyright
@@ -102,6 +86,7 @@ Copyright Pellegrino Prevete. AGPL-3.0.
 See also
 ========
 
+* bbrightnessctl
 * displayctl
 * powerctl
 * sissystemctl
