@@ -28,41 +28,37 @@
 
 
 ========================
-activity-launch
+activity-focused
 ========================
 
 --------------------------------------------------------------
-Activity Launch
+Focused Activity
 --------------------------------------------------------------
-:Version: activity-launch |version|
+:Version: activity-focused |version|
 :Manual section: 1
 
 
 Synopsis
 ========
 
-activity-launch *[options]* *app* *activity*
+activity-focused *[options]*
 
 
 Description
 ===========
 
-Launches Android activities.
+Get currently focused Android activity.
+
+
+
+ Android activities.
 
 
 Options
 =======
 
--m mode              How to switch activity.
--L length            For how much time keep focus on
-                     target activity
--p poll              Time interval between focus checks.
--d                   Dims the display while the target
-                     application is in focus.
--t                   Disables the touchscreen (depending
-                     on device and system you could
-                     be enable to re-enable them without
-                     a reboot).
+-m method            Method to obtain activity name.
+
 
 Application options
 =====================
@@ -86,7 +82,7 @@ Copyright Pellegrino Prevete. AGPL-3.0.
 See also
 ========
 
-* activity-focused
+* activity-launch
 * bbrightnessctl
 * displayctl
 * powerctl
