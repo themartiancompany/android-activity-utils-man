@@ -50,10 +50,6 @@ Description
 Get currently focused Android activity.
 
 
-
- Android activities.
-
-
 Options
 =======
 
