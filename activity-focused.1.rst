@@ -54,6 +54,7 @@ Options
 =======
 
 -m method            Method to obtain activity name.
+                     It can be 'root'.
 
 
 Application options
