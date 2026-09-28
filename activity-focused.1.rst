@@ -84,5 +84,6 @@ See also
 * displayctl
 * powerctl
 * sissystemctl
+* android-display-dim
 
 .. include:: variables.rst
